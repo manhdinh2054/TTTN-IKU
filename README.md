@@ -24,8 +24,9 @@
 
 ### Cấu Hình Dự Án
 
-1. **Cài đặt Java**: Đảm bảo rằng bạn đã cài đặt Java Development Kit (JDK) 17 hoặc phiên bản mới hơn trên máy tính của mình.
-2. **Cài đặt SQL Server**: Cài đặt SQL Server và tạo cơ sở dữ liệu cho ứng dụng. Bạn có thể tham khảo cấu hình sau trong `application.properties` hoặc `application.yml` của Spring Boot để kết nối tới cơ sở dữ liệu:
+1. **Cài đặt Java**: Đảm bảo đã cài đặt Java Development Kit (JDK) 17 hoặc phiên bản mới hơn trên máy tính của mình.
+2. Sử dụng database ở trên đã đươc cung cấp.
+3. **Cài đặt SQL Server**: Cài đặt SQL Server và tạo cơ sở dữ liệu cho ứng dụng. có thể tham khảo cấu hình của Spring Boot để kết nối tới cơ sở dữ liệu
 ```properties
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=<tên_database>;encrypt=true;trustServerCertificate=true;
 spring.datasource.username=<tài_khoản>
@@ -41,3 +42,15 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 
 
 ### Lưu ý trước khi dùng
+-  với cơ sở dữ liệu thì có vài dữ liệu thêm làm ví dụ
+-  nếu dự án chạy thành công, hãy truy cập vào đường dẫn này để tạo tài khoản có thể tạo với các vai trò khác nhau vì thông tin tài khoản mật khẩu dùng công cụ mã hóa BCrypt để mã hóa mật khẩu .
+  ```local
+localhost:8080/register
+```
+-  dự án sử dung Spring Security nên làm vậy mới có thể truy cập được vào các trang quản lí,mua hàng tại quầy  /admin/**  ,/employee/**
+-nếu thành công có thể truy cập login này
+```loginadmin
+localhost:8080:/login
+```
+-hệ thông sẽ tự nhận diện loại tài khoản nếu thông tin đăng nhập có vai trò là ADMIN thì sẽ truy cập trang admin/** , EMPLOYEE thì sẽ truy cập vào employee/**
+

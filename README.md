@@ -26,7 +26,7 @@
 
 1. **Cài đặt Java**: Đảm bảo đã cài đặt Java Development Kit (JDK) 17 hoặc phiên bản mới hơn trên máy tính của mình.
 2. Sử dụng database ở trên đã đươc cung cấp.
-3. **Cài đặt SQL Server**: Cài đặt SQL Server và tạo cơ sở dữ liệu cho ứng dụng. có thể tham khảo cấu hình của Spring Boot để kết nối tới cơ sở dữ liệu
+3. **Cài đặt SQL Server**: Cài đặt SQL Server và tạo cơ sở dữ liệu cho ứng dụng cấu hình `application.properties` . có thể tham khảo cấu hình của Spring Boot để kết nối tới cơ sở dữ liệu
 ```properties
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=<tên_database>;encrypt=true;trustServerCertificate=true;
 spring.datasource.username=<tài_khoản>

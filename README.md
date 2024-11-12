@@ -42,6 +42,7 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 
 
 ### Lưu ý trước khi dùng
+  1.  Tạo tài khoản 
 -  với cơ sở dữ liệu thì có vài dữ liệu thêm làm ví dụ
 -  nếu dự án chạy thành công, hãy truy cập vào đường dẫn này để tạo tài khoản có thể tạo với các vai trò khác nhau vì thông tin tài khoản mật khẩu dùng công cụ mã hóa BCrypt để mã hóa mật khẩu .
   ```local
@@ -53,4 +54,18 @@ localhost:8080/register
 localhost:8080:/login
 ```
 -hệ thông sẽ tự nhận diện loại tài khoản nếu thông tin đăng nhập có vai trò là ADMIN thì sẽ truy cập trang admin/** , EMPLOYEE thì sẽ truy cập vào employee/**
+
+2.  thanh toán
+-  Áp dung cho thanh toán online ở trang giỏ hàng
+-   tìm và chọn ngân hàng NCB như hình dưới
+  ![image](https://github.com/user-attachments/assets/6994df7a-f7b5-43a9-a85a-c4a6b729f3eb)
+-  nhập thông tin thẻ ngân hàng, hãy nhập thẻ này không nhập thẻ thật của mình
+  ```paycard
+    Ngân hàng:  NCB
+    Số thẻ:  9704198526191432198
+    Tên chủ thẻ:  NGUYEN VAN A
+    Ngày phát hành:  07/15
+    Mật khẩu OTP:  123456
+ ```
+
 

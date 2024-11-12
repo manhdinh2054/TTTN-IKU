@@ -9,17 +9,17 @@
 - **Thymeleaf**: Template engine sử dụng để hiển thị giao diện người dùng.
 - **JPA (Java Persistence API)**: Dùng để xử lý dữ liệu với cơ sở dữ liệu.
 - **Bootstrap**: Framework CSS để thiết kế giao diện web.
-- **MySQL**: Cơ sở dữ liệu lưu trữ thông tin người dùng và sản phẩm.
-- **BCrypt**: Mã hóa mật khẩu người dùng.
+- **Mỉcosoft SQL Server**: Cơ sở dữ liệu lưu trữ thông tin người dùng và sản phẩm.
+- **BCrypt**: Mã hóa mật khẩu ngưồ dùng.
 
   
 ### Phần Mềm
 
-- **Java 17 hoặc phiên bản cao hơn**
+- **Java Deverlopment Kit 17 hoặc phiên bản cao hơn**
 - **Spring Boot 3.2.x hoặc phiên bản cao hơn**
 - **Microsoft SQL Server** (hoặc cơ sở dữ liệu quan hệ tương thích)
 - **Maven** để quản lý phụ thuộc
-- **IDE**: IntelliJ IDEA, Eclipse hoặc Visual Studio Code
+- **IDE**: IntelliJ IDEA
 - **Trình duyệt web**: Chrome, Firefox, Edge hoặc Safari
 
 ### Cấu Hình Dự Án
@@ -44,7 +44,7 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 ### Lưu ý trước khi dùng
   1.  Tạo tài khoản 
 -  với cơ sở dữ liệu thì có vài dữ liệu thêm làm ví dụ
--  nếu dự án chạy thành công, hãy truy cập vào đường dẫn này để tạo tài khoản có thể tạo với các vai trò khác nhau vì thông tin tài khoản mật khẩu dùng công cụ mã hóa BCrypt để mã hóa mật khẩu .
+-  nếu dự án chạy thành công, hãy truy cập vào đường dẫn này để tạo tài khoản có thể tạo với các vai trò khác nhau vì thông tin tài khoản mật khẩu dùng công cụ mã hóa BCrypt để mã hóa mật khẩu không thể tạo thủ công qua mã SQL.
   ```local
 localhost:8080/register
 ```
